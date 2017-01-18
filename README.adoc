@@ -1,11 +1,16 @@
 == 1)İçindekiler
 
-== İçindekiler +
+. İçindekiler +
 . Versiyon Geçmişi +
 . Bölüm 1 - Giriş +
 . Bölüm 2 - Canny Kenar Belirleme Algoritması +
-.. Gaussian Blur +
+.. Gaussian Filtresi +
+.. Mean Filtresi +
 .. Görüntünün Gradyan Operatörünün Bulunması +
+... Sobel İşleci +
+... Prewitt İşleci +
+... Roberts İşleci +
+. Kenar İnceltme +
 .. Non Maxima Baskılama +
 .. İkili Eşikleme +
 .. Güçlü-Zayıf Kenar Ayırımı +
