@@ -1,0 +1,20 @@
+== 1)İçindekiler
+
+== İçindekiler +
+. Versiyon Geçmişi +
+. Bölüm 1 - Giriş +
+. Bölüm 2 - Canny Kenar Belirleme Algoritması +
+.. Gaussian Blur +
+.. Görüntünün Gradyan Operatörünün Bulunması +
+.. Non Maxima Baskılama +
+.. İkili Eşikleme +
+.. Güçlü-Zayıf Kenar Ayırımı +
+. Bölüm 3 - Python ile Canny Kenar Belirleme Algoritmasının Uygulanması +
+. Bölüm 4 - Uygulama Görüntüleri +
+.. Uygulama Öncesi +
+.. Gauss Filtresi Sonrası +
+.. Gradyan Büyüklüğü Hesaplandıktan Sonra +
+.. Non-Maksima Baskılamadan Sonra +
+.. İkili Eşiklemeden Sonra +
+.. Güçlü Kenar ve Zayıf Kenar Ayrımından Sonra +
+. Referanslar +
