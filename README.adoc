@@ -18,3 +18,25 @@
 .. İkili Eşiklemeden Sonra +
 .. Güçlü Kenar ve Zayıf Kenar Ayrımından Sonra +
 . Referanslar +
+
+== 2) Versiyon Geçmişi
+
+|===
+|Tarih|Değişiklik|Kişi
+
+|19.12.2016
+|Canny Kenar Belirleme Algoritması
+
+
+|Gönül Toktay
+|9.12.2016
+ 
+|Canny Kenar Belirleme Algoritması
+|M.Sıla Genç
+
+|19.01.2017
+
+|Düzenleme
+|Merve Tafralı
+
+|===
