@@ -2,8 +2,8 @@
 
 . İçindekiler +
 . Versiyon Geçmişi +
-. Bölüm 1 - Giriş +
-. Bölüm 2 - Canny Kenar Belirleme Algoritması +
+. Giriş +
+. Canny Kenar Belirleme Algoritması +
 .. Gaussian Filtresi +
 .. Mean Filtresi +
 .. Görüntünün Gradyan Operatörünün Bulunması +
@@ -14,8 +14,8 @@
 .. Non Maxima Baskılama +
 .. İkili Eşikleme +
 .. Güçlü-Zayıf Kenar Ayırımı +
-. Bölüm 3 - Python ile Canny Kenar Belirleme Algoritmasının Uygulanması +
-. Bölüm 4 - Uygulama Görüntüleri +
+. Python ile Canny Kenar Belirleme Algoritmasının Uygulanması +
+. Uygulama Görüntüleri +
 .. Uygulama Öncesi +
 .. Gauss Filtresi Sonrası +
 .. Gradyan Büyüklüğü Hesaplandıktan Sonra +
@@ -45,3 +45,17 @@
 |Merve Tafralı
 
 |===
+
+== 3)Giriş +
+Bu bölümde görüntü işlemede kullanılan bir diğer algoritmadan bahsedilecektir. Algoritmanın temel çalışma mantığı, tekniği ve örnek uygulaması anlatılacaktır. +
+
+== 4)Canny Kenar Belirleme Algoritması +
+
+Canny kenar belirleme algoritması; görüntüde keskin olarak belirlenmiş kenarları bulmak için John F. Canny tarafından geliştirilmiş ve aşamaları olan bir algoritmadır. Kenar bulmada son derece etkin olarak kullanılan bir algoritmadır. Aşamaları maddeleyecek olursa; 
+. Görüntünün gürültülerini azaltmak amacıyla Gaussian çekirdekle konvolüsyon alınarak azaltılır. Gaussian filtre dışında Mean ya da Medyan filtrede kullanılabilir.
+. Gradyan operatörü uygulanır. Bu şekilde görüntünün Gradyan büyüklüğü ve yönü hesaplanır. Bu işlem için Sobel filtresi en çok kullanılan yöntemdir. Bunun dışında Prewitt ve Robert kenar bulma metotları da mevcuttur.
+. Kenarlar Non Maxima baskılama kullanılarak incelemeye alınır.
+. İkili eşikleme uygulanır bu şekilde istenmeyen ayrıntılardan arındırılma işlemi gerçekleştirilir.
+. Güçlü-zayıf ayrımı yapıldıktan sonra baskılama uygulanır ve asıl kenarlarla görüntüye son hali verilir.
+
+== 4.1)
