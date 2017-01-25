@@ -144,7 +144,7 @@ Eğer kenara dik maksimum gradyan genliği düşük eşikten düşük ise, sıf�
 Eğer, piksel değeri, yüksek ve düşük eşik arasında ise, bu pikselin yüksek eşiği aşan bir komşusu var ise kenar olarak kalmasına izin verilir. +
 Eğer ki eşiği aşan bir komşusu yok ise sıfıra çekilerek kenar resminden elenir. +
 
-== 5)
+== 5) Python ile Canny Kenar Belirleme Algoritmasının Uygulanması
 
 [source,python]
 ---------------------------------------------------------------------
@@ -383,6 +383,46 @@ robertimage.save("thrd.bmp")
 
 #Son olarak resim dosyası proje klasörüne kaydedilir.
 ---------------------------------------------------------------------
+
+== 6) Uygulama Görüntüleri
+
+=== 6.1) Uygulama Öncesi
+
+image::13.png[normal]
+
+=== 6.2) Mean Filtresi Sonrası
+
+image::14.png[mean]
+
+=== 6.3) Gradyan Büyüklüğü Hesaplandıktan Sonra
+
+image::15.png[bradbuy]
+
+
+=== 6.4) Non-Maksima Baskılamadan Sonra
+
+image::16.png[nonmaksima]
+
+=== 6.5) İkili Eşikleme ve Kenar Ayrımından Sonra
+
+image::17.png[ikilieşikleme]
+
+== 7) REFERANSLAR
+. https://yavuzbugra.wordpress.com/2011/05/01/goruntu-islemede-filtreleme/
+. http://ahmetkakici.github.io/programlama/c-ile-goruntu-isleme-2//
+. http://www.librow.com/articles/article-5
+. https://www.cs.auckland.ac.nz/courses/compsci373s1c/PatricesLectures/Gaussian%20Filtering_1up.pdf
+. http://www.intelligence.tuc.gr/~petrakis/courses/computervision/filtering.pdf
+. http://www.omertaban.com/2013/05/14/goruntu-bozunmalari-ve-duzeltme-teknikleri/#more-1318
+. http://www.yildiz.edu.tr/~bayram/sgi/saygi.htm 
+. http://fenbildergi.aku.edu.tr/pdf/0801/8-1(217-230).pdf
+. http://stackoverflow.com/questions/17815687/image-processing-implementing-sobel-filter
+. http://web.firat.edu.tr/iaydin/bmu357/bmu_357_bolum7.pdf
+. http://www.cse.usf.edu/~r1k/MachineVisionBook/MachineVision.files/MachineVision_Chapter5.pdf
+. http://www.emo.org.tr/ekler/14205c3cba312d9_ek.pdf
+
+
+
 
 
 
