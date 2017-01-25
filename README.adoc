@@ -75,10 +75,10 @@ Gaussian fonksiyonu için önemli olabilecek bazı değerler tabloyla gösterilm
 
 image::3.png[GFBazıDeğerler]
 
- Gaussian fonksiyonu birçok araştırma alanında kullanılmaktadır. +
-* Gürültü veya bir veri için olasılık dağılımı tanımlar. +
-* Yumuşatma için kullanılan bir operatördür. +
-* Matematikte kullanılır. +
+Gaussian fonksiyonu birçok araştırma alanında kullanılmaktadır. +
+Gürültü veya bir veri için olasılık dağılımı tanımlar. +
+Yumuşatma için kullanılan bir operatördür. +
+Matematikte kullanılır. +
 
 Gaussian görüntü işlemede çalışılırken 2 boyutlu Gaussian fonksiyonuna ihtiyaç duyulmaktadır.  +
 
