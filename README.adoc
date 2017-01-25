@@ -58,4 +58,28 @@ Canny kenar belirleme algoritması; görüntüde keskin olarak belirlenmiş kena
 . İkili eşikleme uygulanır bu şekilde istenmeyen ayrıntılardan arındırılma işlemi gerçekleştirilir.
 . Güçlü-zayıf ayrımı yapıldıktan sonra baskılama uygulanır ve asıl kenarlarla görüntüye son hali verilir.
 
-== 4.1)
+== 4.1)Gaussian Filtresi
+
+Kenar bulma işlemi için görüntüde yumuşatma yapılmalıdır. Gaussian filtresi görüntüleri bulanıklaştırmak/yumuşatmak ve görüntü üzerindeki gürültüyü arındırmak için kullanılır. +
+Gaussian fonksiyonu: +
+
+image::1.png[GaussianFonksiyonu] 
+
+Denklemde kullanılan σ değeri dağılımın standart sapmadır. Dağılımın ortalama 0 değere sahip olduğu varsayılmaktadır. +
+
+image::2.png[GaussDağılımı] 
+
+Gauss dağılımının grafiği Şekil 1’de gösterilmektedir. +
+
+Gaussian fonksiyonu için önemli olabilecek bazı değerler tabloyla gösterilmiştir. +
+
+image::3.png[GFBazıDeğerler]
+
+. Gaussian fonksiyonu birçok araştırma alanında kullanılmaktadır. 
+* Gürültü veya bir veri için olasılık dağılımı tanımlar.
+* Yumuşatma için kullanılan bir operatördür.
+* Matematikte kullanılır.
+
+
+
+
