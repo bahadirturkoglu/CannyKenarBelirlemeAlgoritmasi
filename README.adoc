@@ -96,5 +96,62 @@ image::6.png[Pencere]
 
 image::7.png[ortalınması]
 
+=== 2.3)Gradyan Operatörünün Bulunması
+Kenarların belirlenmesinde 3 adet işleç kullanılmaktadır. Sobel işleci, Prewitt işleci ve Robert işleçleridir. 
+
+==== 2.3.1) Sobel İşleci
+Sayısal bir görüntü, bir fonksiyon olarak değerlendirildiğinde, bir nokta üzerindeki gradyan değerinin, 3×3 komşulukta mümkün olan dört merkezi yönde elde edilebilir gradyan değerlerinin vektör toplamları şeklinde oluşturulması düşüncesine dayanmaktadır. + 
+Bu gradyan değerlerinin vektör toplamları; gradyan ölçümleri üzerinde ortalama değer bulunmasını sağlamaktadır. 3×3’lük komşuluk için merkez noktanın gradyan değeri, dik vektör çiftlerinin vektör toplamları olarak bulunmaktadır. +
+Sobel işlecinde iki adet konvolüsyon çekirdeği yer alır. Bunlar görüntü içerisindeki ani ışık yoğunluk değişimi olan yerlerin belirlenmesini sağlar. +
+
+==== 2.3.2) Prewitt İşleci
+Sobel işleci gibi düşey ve yatay keskinlik sağlamaktadır. Sobel işlece göre daha basittir ama sonucunu değerlendirecek olursak biraz daha gürültü içermektedir. +
+
+image::8.png[gpiksel] 
+
+==== 2.3.3) Robert İşleci
+Görüntü işlemede kullanılan en eski işleçtir. Bu işleçle sadece yatay ya da sadece düşey olarak kenarlar elde edilmektedir. Hızlı ve basit bir uygulamaya sahip olduğundan gerçek zamanlı uygulamalarda çokça tercih edilmektedir. +
+
+image::11.png[robert] 
+
+Sırasıyla:Matematiksel hesaplanması gösterilirse, Konvolüsyon uygulandıktan sonra,2x2 boyutunda iki adet Gradyan operatörü elde edilmiştir
+
+image::9.png[]
+
+=== 2.4) Kenar İnceltme
+İşleçler ile elde edilen görüntülerde kenarlar kalındır. Kenarların bir piksel gibi ince gösterilmesi için çeşitli metotlar geliştirilmiştir. Bu yöntemlerden en başarılısı maksimum olmayan piksel değerlerinin bastırılması yöntemidir. +
+Çalışma mantığına bakılacak olursa; görüntü, görüntünün gradyanı yönünde taranır ve pikseller yerel maksimumun parçası değillerse sıfıra ayarlanır. +
+Gradyan Operatörünün Büyüklüğü: image::12.png[g]
+Gradyan Türevinin Yönü: θ = arctan(Gy /Gx)  ifade edilir. +
+Gradyan Yönü: arctan(Gy /Gx) ile tayin edilmektedir.  +
+
+Her bir piksel için gradyan yönü hesaplandıktan sonra, elde edilen açı değeri istikametindeki iki ilave komşu piksel seçilerek, ortanca pikselin bunlardan yüksek değerde olması istenir. Bu şart sağlanmaz ise, ortanca piksel sıfıra çekilerek kenar resminden elenir. Bu şekilde, kenar resminde sadece kenarlara dik yönde maksimum gradyan değerlerine sahip olan pikseller bırakılır. +
+
+image::10.png[grad] +
+
+Bulunan Gradyan operatörünün komşuluğunun incelenmesi için öncelikle, açı değerlerinin belirlenmesi gereklidir. Bunun için de kenar ayrımlarını saptayacağımız renk açılarını kullanmalıyız. Her renk değeri belirli aralıklar içerisinde kalır. Bunları şöyle bir formül ile hesaplayacağız. Sarı aralıktaki herhangi bir kenar yönü 0 derece olarak ayarlanır. Yeşil yönde düşen herhangi bir kenar yönü 45 dereceye ayarlanır. Mavi aralıktaki herhangi bir kenar yönü 90 dereceye ayarlanır. Son olarak, kırmızı yönde kalan herhangi bir kenar yönü 135 dereceye ayarlanır. +
+
+=== 2.5) İkili Eşikleme ve Kenar Ayrımı
+Gradyan genlik resminin belirli bir aralığa normalize edilmesi ve kenarların diki boyunca maksimum olmayanların bastırılması sonrasında elde edilen kenar resmi, piksel sürekliliği aşamasına girer. Kenar resmindeki piksel sürekliliğinin test edilmesi amacıyla yüksek ve düşük seviyede iki eşik değeri kullanılır. Süreklilik testi için şu adımlar uygulanır: +
+Yüksek ve düşük seviye olmak üzere iki adet eşik seviyesi belirlenir. +
+Her bir nokta için: 
+*Eğer kenara dik maksimum gradyan genliği (piksel değeri) yüksek eşikten yüksek ise, kenar olarak bırakılır.
+
+*Eğer kenara dik maksimum gradyan genliği düşük eşikten düşük ise, sıfıra çekilir.
+
+*Eğer, piksel değeri, yüksek ve düşük eşik arasında ise, bu pikselin yüksek eşiği aşan bir komşusu var ise kenar olarak kalmasına izin verilir.
+
+*Eğer ki eşiği aşan bir komşusu yok ise sıfıra çekilerek kenar resminden elenir.
+
+
+
+
+
+
+
+
+
+
+
 
 
