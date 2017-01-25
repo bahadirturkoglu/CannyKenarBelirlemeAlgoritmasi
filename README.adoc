@@ -88,6 +88,9 @@ Gaussian filtresi 2D dağılımını nokta yayılımını kullanarak çalışır
 
 image::5.png[]
 
+== 4.2)Mean Filtresi
+Mean filtresi alçak geçiren filtre olarak çalışmaktadır. Alçak geçiren filtre belirli bir frekansın üzerinde kalan sinyallerin işlenmesini sağlayan filtredir. Mean filtrenin çalışma mantığı; pencerede bulunan piksel değerinin diğer tüm piksel değerlerinin ortalaması ile değiştirerek çalışır. Pencere genellikle karedir yani matris olarak düşünülürse nxn boyutunda kare matristir.
+Filtrenin çalışma mantığı bir örnekle gösterilecek olursa:
 
 
 
