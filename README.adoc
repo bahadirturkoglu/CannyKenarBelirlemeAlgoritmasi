@@ -79,9 +79,10 @@ image::3.png[GFBazıDeğerler]
 * Gürültü veya bir veri için olasılık dağılımı tanımlar.
 * Yumuşatma için kullanılan bir operatördür.
 * Matematikte kullanılır.
+
 Gaussian görüntü işlemede çalışılırken 2 boyutlu Gaussian fonksiyonuna ihtiyaç duyulmaktadır.  +
 
-image::4.png[görüntü] +
+image::4.png[görüntümatrisi]
 
 Gaussian filtresi 2D dağılımını nokta yayılımını kullanarak çalışır. Bu konvolüsyon ile sağlanır. Gaussian filtrenin görüntü üzerinde uygulaması basitçe şu şekilde gösterilebilir. Önemli ayrıntı işlem gerçekleştirilirken kenarlıklar üzerinde gerçekleştirilmez. +
 
