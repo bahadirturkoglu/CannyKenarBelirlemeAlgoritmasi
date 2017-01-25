@@ -123,7 +123,7 @@ image::9.png[]
 Çalışma mantığına bakılacak olursa; görüntü, görüntünün gradyanı yönünde taranır ve pikseller yerel maksimumun parçası değillerse sıfıra ayarlanır. +
 Gradyan Operatörünün Büyüklüğü: +
 
-image::12.png[resim] +
+image::12.png[gradyanoperatör]
 
 Gradyan Türevinin Yönü: θ = arctan(Gy /Gx)  ifade edilir. +
 Gradyan Yönü: arctan(Gy /Gx) ile tayin edilmektedir.  +
