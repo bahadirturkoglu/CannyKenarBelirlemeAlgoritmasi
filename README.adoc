@@ -185,17 +185,13 @@ for k in range(wdh):
         #Her pikselde birer r(kırmızı),g(yeşil),b(mavi) değeri bulunmaktadır. Bunlar o piksele renk veren kodlardır. Öncelikle 'getpixel' fonksiyonu ile bu değerleri r,g,b değişkenlerine atıyoruz. 
         
         gray=(int)((r*0.2126)+(g*0.7152)+(b*0.0722))        
-        #Resimizi gri yapacak olan sayısal değeri elde etmek için, insan gözünün gama ışınlarını algılama 
-        oranlarına göre oluşturulan formül ile aldığımız katsayıları r,g,b değişkenleriyle 
-        çarpıp topluyoruz. Böylece resimdeki her piksel için ayrı bir gri renk tonu elde etmiş oluyoruz.
+        #Resimizi gri yapacak olan sayısal değeri elde etmek için, insan gözünün gama ışınlarını algılama oranlarına göre oluşturulan formül ile aldığımız katsayıları r,g,b değişkenleriyle çarpıp topluyoruz. Böylece resimdeki her piksel için ayrı bir gri renk tonu elde etmiş oluyoruz.
         graylist[k][l]=gray         
         
         #graylist matrisinin her elemanına ağırlık toplama yöntemi ile bulduğumuz gri değerini kaydediyoruz.
         
         newmat[k,l]=(gray,gray,gray)            
-        #Resim dosyasını yüklediğimiz matrisin tüm elemanlarına(piksellerine) ağırlık toplama yöntemine göre 
-        bulduğumuz gri renk kodunu atıyoruz. Böylece resmin her pikseli renk tonuna göre gri rengini almış olacaktır.
-        Burada kırmızı, yeşil, mavi renk tonlarının hepsine aynı değeri atıyoruz. Bu yöntem gri rengini elde etmemizi sağlıyor.
+        #Resim dosyasını yüklediğimiz matrisin tüm elemanlarına(piksellerine) ağırlık toplama yöntemine göre bulduğumuz gri renk kodunu atıyoruz. Böylece resmin her pikseli renk tonuna göre gri rengini almış olacaktır.Burada kırmızı, yeşil, mavi renk tonlarının hepsine aynı değeri atıyoruz. Bu yöntem gri rengini elde etmemizi sağlıyor.
 
 image.save("gray.bmp")       
 
@@ -281,8 +277,7 @@ newangle=[[0]*hgh for x in range(wdh)]
 newedge=[[0]*hgh for x in range(wdh)]       
 for x in range (1,wdh-1,1):        
 
-#Raporda belirtilen Gx ve Gy değerleri için konvolüsyon işlemi yapılmaktadır. Bu işlem ile görüntünün
-her piksel değeri oluşturduğumuz Robert işleç matrisi ile çarpılıp toplanacaktır. Böylece Gx ve Gy değerini elde ediyoruz.
+#Raporda belirtilen Gx ve Gy değerleri için konvolüsyon işlemi yapılmaktadır. Bu işlem ile görüntünün her piksel değeri oluşturduğumuz Robert işleç matrisi ile çarpılıp toplanacaktır. Böylece Gx ve Gy değerini elde ediyoruz.
 
     for y in range (1,hgh-1,1):
         Gx = (robert_x[0][0] * graylist[x-1][y-1] 
@@ -311,8 +306,7 @@ her piksel değeri oluşturduğumuz Robert işleç matrisi ile çarpılıp topla
         
         thisAngle=math.degrees(math.atan2(Gx, Gy))      
         
-        #Non maxima işlemi için kullanılan renk açıları bulunmaktadır. 0,45,90,135 açı değerlerini renk tablosunda belirtildiği
-        üzere açı aralığını kontrol ederek açı listesinin değerlerini buluyoruz.
+        #Non maxima işlemi için kullanılan renk açıları bulunmaktadır. 0,45,90,135 açı değerlerini renk tablosunda belirtildiği üzere açı aralığını kontrol ederek açı listesinin değerlerini buluyoruz.
         
                       
         if ( ( (thisAngle < 22.5) and (thisAngle > -22.5) ) or (thisAngle > 157.5) or (thisAngle < -157.5) ):
