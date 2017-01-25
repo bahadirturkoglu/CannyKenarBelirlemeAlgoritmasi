@@ -396,7 +396,7 @@ image::14.png[mean]
 
 === 6.3) Gradyan Büyüklüğü Hesaplandıktan Sonra
 
-image::15.png[bradbuy]
+image::15.1.png[bradbuy]
 
 
 === 6.4) Non-Maksima Baskılamadan Sonra
