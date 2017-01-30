@@ -94,7 +94,9 @@ Filtrenin çalışma mantığı bir örnekle gösterilecek olursa: +
 
 image::6.png[Pencere]
 
-http://www.librow.com/articles/article-5[[3]]
+
+http://www.librow.com/articles/article-5[[3]] +
+
 
 image::7.png[ortalınması]
 
